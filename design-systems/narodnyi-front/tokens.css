@@ -1,0 +1,112 @@
+/* ============================================================
+   Народный Фронт — Design Tokens
+   Open Design format · CSS custom properties only
+   Adapted from colors_and_type.css (no @font-face declarations)
+   ============================================================ */
+
+:root {
+  /* === Colors — primary palette (modern 2025 deck) ================= */
+  --color-red:          #C00000; /* main accent (deep red) */
+  --color-red-bright:   #DB001B; /* 2011 guideline red */
+  --color-red-dark:     #8B0000; /* shadow / pressed */
+  --color-red-tint:     #F5D6D6; /* pale wash */
+
+  /* === Colors — tricolour (2011 guideline · logo + legacy) ========= */
+  --color-blue:         #004B92; /* navy */
+  --color-blue-light:   #00A4D8; /* light blue */
+  --color-blue-dark:    #002E5C;
+
+  /* === Colors — base ============================================== */
+  --color-white:        #FFFFFF;
+  --color-black:        #111111;
+
+  /* === Colors — neutrals ========================================== */
+  --color-ink:          #3B3838; /* secondary text */
+  --color-ink-2:        #4A4A4A;
+  --color-gray-90:      #1F1F1F;
+  --color-gray-70:      #4A4A4A;
+  --color-gray-50:      #7A7A7A;
+  --color-gray-30:      #BFBFBF;
+  --color-gray-15:      #E0E0E0;
+  --color-gray-8:       #F0F0F0;
+  --color-paper:        #F7F6F4; /* warm off-white */
+
+  /* === Colors — semantic foreground =============================== */
+  --color-fg-1:         var(--color-black);   /* primary text */
+  --color-fg-2:         var(--color-ink);     /* secondary text */
+  --color-fg-3:         var(--color-gray-50); /* muted / captions */
+  --color-fg-on-red:    var(--color-white);
+  --color-fg-on-blue:   var(--color-white);
+  --color-fg-accent:    var(--color-red);
+
+  /* === Colors — semantic background =============================== */
+  --color-bg-app:       var(--color-paper);
+  --color-bg-surface:   var(--color-white);
+  --color-bg-hero:      var(--color-red);
+  --color-bg-hero-navy: var(--color-blue);
+  --color-bg-muted:     var(--color-gray-8);
+
+  /* === Colors — borders & dividers ================================ */
+  --color-border-1:      #E5E5E5;
+  --color-border-2:      #CFCFCF;
+  --color-border-strong: var(--color-black);
+
+  /* === Fonts ====================================================== */
+  --font-display: 'DIN Pro Condensed', 'DIN Condensed', 'Arial Narrow', sans-serif;
+  --font-body:    'DIN Pro', 'Segoe UI', Arial, system-ui, sans-serif;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* === Font weights =============================================== */
+  --font-weight-light:   300;
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+  --font-weight-bold:    700;
+  --font-weight-black:   900;
+
+  /* === Font sizes — type scale (display-weighted) ================= */
+  --font-size-giant: clamp(64px, 10vw, 148px);  /* hero stat */
+  --font-size-h1:    clamp(44px, 6vw, 96px);     /* section title */
+  --font-size-h2:    clamp(32px, 4vw, 60px);
+  --font-size-h3:    clamp(24px, 3vw, 40px);
+  --font-size-h4:    20px;
+  --font-size-lead:  22px;
+  --font-size-body:  16px;
+  --font-size-small: 14px;
+  --font-size-micro: 12px;
+
+  /* === Line heights =============================================== */
+  --line-height-tight:   0.82; /* giant stat numbers */
+  --line-height-display: 0.95; /* headlines */
+  --line-height-body:    1.55;
+
+  /* === Spacing scale ============================================== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* === Radii (mostly square — brand is angular) =================== */
+  --radius-0:    0px;
+  --radius-1:    2px;
+  --radius-2:    4px;
+  --radius-pill: 999px;
+
+  /* === Shadows ==================================================== */
+  --shadow-1:    0 1px 2px rgba(17,17,17,0.06);
+  --shadow-2:    0 2px 8px rgba(17,17,17,0.10);
+  --shadow-3:    0 8px 24px rgba(17,17,17,0.14);
+  --shadow-flag: 0 12px 32px rgba(192,0,0,0.25);
+
+  /* === Motion ===================================================== */
+  --ease-standard: cubic-bezier(0.2, 0.0, 0.2, 1);
+  --ease-entrance: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-exit:     cubic-bezier(0.4, 0.0, 1, 1);
+  --duration-fast: 120ms;
+  --duration-med:  200ms;
+  --duration-slow: 360ms;
+}
